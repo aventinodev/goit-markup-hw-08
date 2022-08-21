@@ -1,0 +1,34 @@
+@mixin button($color, $bgc, $shdw) {
+  color: $color;
+  background-color: $bgc;
+  box-shadow: $shdw;
+}
+
+@mixin flex($dsp: flex, $fd: row, $ai: center, $jc: center, $gp: null) {
+  display: $dsp;
+  flex-direction: $fd;
+  align-items: $ai;
+  justify-content: $jc;
+  gap: $gp;
+}
+@mixin font($fs: false, $fw: false, $lh: false, $ls: false) {
+  @if $fs {
+    font-size: $fs;
+  }
+  @if $fw {
+    font-weight: $fw;
+  }
+  @if $lh {
+    line-height: calc($lh / $fs);
+  }
+  @if $ls {
+    letter-spacing: $ls;
+  }
+}
+
+@mixin animation($one, $two, $three, $time, $func, $del) {
+  transition-property: $one, $two, $three;
+  transition-duration: $time;
+  transition-timing-function: $func;
+  transition-delay: $del;
+}
