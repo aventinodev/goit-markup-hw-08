@@ -1,0 +1,49 @@
+$primaryColor: #757575;
+$titleColor: #212121;
+$accentColor: #2196f3;
+$accentСolorBtn: #188ce8;
+
+$whiteColor: #ffffff;
+$blackColor: #000000;
+
+$transparentWhiteColor: rgba(255, 255, 255, 0.6);
+$transparentGreyColor: rgba(117, 117, 117, 0.5);
+
+//   hero,footer
+$backgroundColor: hwb(235 18% 77%);
+// сделать локальним
+$whiteBackgroundColor: #ffffff;
+
+//   team
+$backgroundColorAdd: #f5f4fa;
+$backgroundColorThumb: rgba(33, 150, 243, 0.9);
+$backgroundColorBdr: rgba(0, 0, 0, 0.5);
+
+$borderColorHeader: #ececec;
+$borderColorPf: #eeeeee;
+
+$iconColor: #afb1b8;
+
+$iconBackground: rgba(255, 255, 255, 0.1);
+
+$borderColor: rgba(255, 255, 255, 0.3);
+$borderColorAdd: rgba(0, 0, 0, 0.1);
+$borderColorInput: rgba(33, 33, 33, 0.2);
+
+$boxShadowButton: 0px 4px 4px rgba(0, 0, 0, 0.15);
+$boxShadowCard: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+  1px 4px 6px rgba(0, 0, 0, 0.16);
+$boxShadowFltr: 0px 0px 0px rgba(0, 0, 0, 0.1), 0px 0px 0px rgba(0, 0, 0, 0.08),
+  0px 0px 0px rgba(0, 0, 0, 0.12);
+$boxShadowTms: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+  0px 2px 1px rgba(0, 0, 0, 0.2);
+
+$lG: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
+
+$animation: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+$animationModal: 500ms cubic-bezier(0.4, 0, 0.2, 1);
+$animationDelay: 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+
+$func: cubic-bezier(0.4, 0, 0.2, 1);
+$del: 250ms;
+$time: 250ms;
