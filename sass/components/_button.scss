@@ -1,0 +1,77 @@
+.btn {
+  @include flex();
+  min-width: 200px;
+  height: 50px;
+
+  transition: background-color $animation;
+  border-radius: 4px;
+  border: none;
+  font-family: inherit;
+
+  color: $whiteColor;
+  background-color: $accentColor;
+  box-shadow: $boxShadowButton;
+
+  @include font(16px, 700, 30px, 0.06em);
+  // font-weight: 700;
+  // line-height: 1.88;
+  // letter-spacing: 0.06em;
+
+  &:hover,
+  &:focus {
+    background-color: $accentСolorBtn;
+    transition: background-color $animation;
+  }
+  &__icon {
+    fill: $whiteColor;
+  }
+}
+
+.btn--hero {
+  padding: 10px 32px;
+}
+
+.btn--white {
+  min-width: 73px;
+  height: auto;
+  padding: 6px 22px;
+
+  @include font(16px, 500, 26px, 0.03em);
+  // font-weight: 500;
+  // line-height: 1.63;
+  // letter-spacing: 0.03em;
+  color: $titleColor;
+  background-color: $backgroundColorAdd;
+  box-shadow: $boxShadowFltr;
+
+  transition: background-color $animation, color $animation, box-shadow 250ms $animation;
+
+  &:hover,
+  &:focus {
+    color: $whiteColor;
+    background-color: $accentColor;
+    box-shadow: $boxShadowFltr;
+    transition: background-color $animation, color $animation, box-shadow 250ms $animation;
+  }
+}
+.btn--current {
+  color: $whiteColor;
+  background-color: $accentColor;
+  box-shadow: $boxShadowFltr;
+}
+
+.btn--icon {
+  gap: 10px;
+  padding: 10px 28px;
+}
+
+.btn--form {
+  margin: 0 auto;
+  padding: 10px 52px;
+  transition: text-shadow $animation;
+
+  &:hover {
+    text-shadow: $boxShadowButton;
+    transition: text-shadow $animation;
+  }
+}
