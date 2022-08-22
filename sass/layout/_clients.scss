@@ -1,0 +1,55 @@
+.clients__title {
+  // @include font(36px, 700, 42px, 0.03em);
+  // text-align: center;
+  // margin-bottom: 50px;
+}
+.clients__list {
+  @include flex($fd: null, $jc: null);
+  // display: flex;
+  // align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+.clients__item {
+  @media screen and (max-width: 480px) {
+    flex-basis: calc((100% - 1 * 30px) / 2);
+    height: 92px;
+  }
+  @media screen and (min-width: 480px) {
+    flex-basis: calc((100% - 1 * 30px) / 2);
+    height: 92px;
+  }
+  @media screen and (min-width: 768px) {
+    flex-basis: calc((100% - 2 * 30px) / 3);
+    height: 92px;
+  }
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc((100% - 5 * 30px) / 6);
+    height: 92px;
+  }
+}
+.clients__link {
+  @include flex();
+  width: 100%;
+  height: 100%;
+  border: 1px solid $iconColor;
+  border-radius: 4px;
+  color: $iconColor;
+  transition: border $animation;
+
+  &:hover,
+  &:focus {
+    border-color: $accentColor;
+    color: $accentColor;
+  }
+}
+.clients__icon {
+  fill: currentColor;
+  transition: fill $animation;
+
+  .clients__link:hover &,
+  .clients__link:focus & {
+    fill: currentColor;
+    transition: fill $animation;
+  }
+}
