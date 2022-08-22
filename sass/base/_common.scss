@@ -9,8 +9,23 @@ body {
   margin: 0 auto;
   padding-top: 94px;
   padding-bottom: 94px;
-}
 
+  @media screen and (max-width: 1199px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
 .visually-hidden {
   @extend %visuallyHidden;
+}
+
+.vacant {
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
+}
+.vacant-mob {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
 }
