@@ -1,0 +1,37 @@
+.activities {
+  padding-top: 0;
+}
+.activities__title {
+  @include font(36px, 700, 42px, 0.03em);
+  text-align: center;
+  margin-bottom: 50px;
+}
+.activities-list {
+  display: flex;
+  column-gap: 30px;
+}
+.activities-list__item {
+  position: relative;
+  flex-basis: calc((100% - 2 * 30px) / 3);
+}
+.activities-wrapper {
+  @include flex();
+  $backgroundColor: rgba(47, 48, 58, 0.8);
+  position: absolute;
+  bottom: 0%;
+  left: 0%;
+  width: 100%;
+  min-height: 70px;
+
+  background-color: $backgroundColor;
+}
+.activities-wrapper__label {
+  @include font(14px, 700, 16px, 0.03em);
+  // font-weight: 700;
+  // font-size: 14px;
+  // line-height: 1.14;
+  text-align: center;
+
+  text-transform: uppercase;
+  color: $whiteColor;
+}
