@@ -20,12 +20,12 @@
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
-    <header class="header">
+    <header class="header section">
       <div class="container container--header">
         <a href="./index.html" lang="en" class="logo header__logo"
           >Web<span class="logo--dark">Studio</span>
         </a>
-        <nav class="navigation header__navigation">
+        <nav class="navigation header__navigation vacant-mob">
           <ul class="navigation__list">
             <li class="navigation__item">
               <a class="navigation__link current" href="./index.html">Студія</a>
@@ -38,22 +38,25 @@
             </li>
           </ul>
         </nav>
-        <ul class="contact contact--header">
-          <li class="contact__item--header">
+        <ul class="contact contact--header vacant-mob">
+          <li class="contact__item--header vacant-mob">
             <a
-              class="contact__link contact__link--header"
+              class="contact__link contact__link--header contact__link--mail"
               href="mailto:info@devstudio.com"
               target="_blank"
             >
-              <svg class="contact__icon" width="16" height="12">
+              <svg class="contact__icon vacant-mob" width="16" height="12">
                 <use href="./images/symbol-defs.svg#icon-envelope"></use>
               </svg>
               info@devstudio.com
             </a>
           </li>
-          <li class="contact__item--header">
-            <a class="contact__link contact__link--header" href="tel:+380961111111">
-              <svg class="contact__icon" width="10" height="16">
+          <li class="contact__item--header vacant-mob">
+            <a
+              class="contact__link contact__link--header contact__link--tel"
+              href="tel:+380961111111"
+            >
+              <svg class="contact__icon vacant-mob" width="10" height="16">
                 <use href="./images/symbol-defs.svg#icon-smartphone"></use>
               </svg>
               +38 096 111 11 11
@@ -65,14 +68,14 @@
     <main>
       <section class="hero section">
         <div class="container container--hero">
-          <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
+          <h1 class="title title--main">Ефективні рішення для вашого бізнесу</h1>
           <button class="btn btn--hero" type="button" data-modal-open>Замовити послугу</button>
         </div>
       </section>
       <section class="features section">
         <div class="container">
           <!--заголовок "Особенности" невидимый-->
-          <h2 class="features__title title">Особливості</h2>
+          <h2 class="title visually-hidden">Особливості</h2>
           <ul class="features__list">
             <li class="features__item">
               <div class="features__icon">
@@ -121,7 +124,7 @@
           </ul>
         </div>
       </section>
-      <section class="activities section">
+      <section class="activities section vacant">
         <div class="container">
           <h2 class="activities__title title">Чим ми займаємося</h2>
           <ul class="activities-list">
