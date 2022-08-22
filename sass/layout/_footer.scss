@@ -1,0 +1,32 @@
+.footer {
+  margin: 0 auto;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: $backgroundColor;
+
+  & .container {
+    display: flex;
+    align-items: baseline;
+  }
+  .footer__logo {
+    margin: 0 0 20px;
+  }
+}
+.footer__social {
+  margin-right: auto;
+}
+
+.footer__contacts {
+  flex-basis: 231px;
+  margin-right: 70px;
+}
+
+.footer__appeal {
+  margin-bottom: 20px;
+  @include font(14px, 700, 16px, 0.03em);
+  // font-weight: 700;
+  // font-size: 14px;
+  // line-height: 1.14;
+  text-transform: uppercase;
+  color: $whiteColor;
+}
