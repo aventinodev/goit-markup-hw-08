@@ -1,0 +1,81 @@
+.contact {
+  @include flex($fd: column, $ai: null, $jc: null, $gp: 9px);
+  // display: flex;
+  // flex-direction: column;
+  // gap: 9px;
+}
+// .contact__item:not(:last-child) {
+//   margin-bottom: 9px;
+
+.contact__link {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: $transparentWhiteColor;
+  // transition: color $animation;
+  @include animation(color, null, null, $time, $func, null);
+
+  &--post {
+    color: $whiteColor;
+  }
+  &:hover,
+  &:focus {
+    color: $accentColor;
+  }
+}
+// =====HEADER======
+.contact--header {
+  @media screen and (min-width: 768px) {
+    @include flex($fd: column, $ai: null, $gp: 12px);
+  }
+  @media screen and (min-width: 1200px) {
+    @include flex($gp: 50px);
+  }
+}
+
+// .contact__item--header:not(:last-child) {
+//   @media screen and (min-width: 1200px) {
+//     margin-right: 50px;
+//   }
+// }
+@media screen and (min-width: 768px) {
+  .contact__link--mail {
+    padding-top: 20px;
+    padding-bottom: 0px;
+  }
+  .contact__link--tel {
+    padding-top: 0px;
+    padding-bottom: 20px;
+  }
+}
+.contact__link--header {
+  @include flex($jc: null);
+  // display: flex;
+  // align-items: center;
+
+  @include font(14px, 500, 16px, 0.02em);
+  // font-weight: 500;
+  // font-size: 14px;
+  // line-height: 1.14;
+  // letter-spacing: 0.02em;
+  color: $primaryColor;
+  @include animation(color, null, null, $time, $func, null);
+
+  @media screen and (min-width: 768px) {
+    @include font(12px, 500, 14px, 0.02em);
+  }
+  @media screen and (min-width: 1200px) {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+
+  &:hover,
+  &:focus {
+    color: $accentColor;
+  }
+}
+
+.contact__icon {
+  margin-right: 10px;
+  fill: currentColor;
+}
