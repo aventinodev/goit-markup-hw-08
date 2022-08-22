@@ -1,0 +1,68 @@
+.team {
+  background-color: $backgroundColorAdd;
+  @media screen and (max-width: 480px) {
+    padding-top: 60px;
+  }
+}
+// .team__title {
+//   @media screen and (max-width: 480px) {
+//     @include font(28px, 700, 33px, 0.03em);
+//     margin-bottom: 30px;
+//   }
+//   text-align: center;
+
+//   //   margin-bottom: 50px;
+//   //    @include font(36px, 700, 42px, 0.03em);
+// }
+
+.team-list {
+  background-color: $whiteBackgroundColor;
+  box-shadow: $boxShadowTms;
+  @media screen and (max-width: 767px) {
+    margin-bottom: 30px;
+  }
+  @media screen and (min-width: 768px) {
+    @include flex($ai: null, $jc: null, $gp: 30px);
+    flex-wrap: wrap;
+  }
+}
+.team-list__item {
+  @media screen and (max-width: 767px) {
+    width: 100%;
+  }
+  @media screen and (min-width: 768px) {
+    flex-basis: calc((100% - 1 * 30px) / 2);
+  }
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc((100% - 3 * 30px) / 4);
+  }
+}
+.team-label-wrap {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  .team-label-wrap .soc-list__icon {
+    fill: $iconColor;
+    transition: fill $animation;
+  }
+}
+.team-label-wrap__title {
+  margin-bottom: 10px;
+  text-align: center;
+
+  @include font(16px, 500, 19px, 0.03em);
+  // font-weight: 500;
+  // font-size: 16px;
+  // line-height: 1.19;
+}
+.team-label-wrap__descr {
+  text-align: center;
+  margin-bottom: 16px;
+  @include font(16px, 400, 19px, 0.03em);
+  // font-size: 16px;
+  // line-height: 1.19;
+  color: $primaryColor;
+}
+.team-label-wrap .social__icon {
+  fill: $iconColor;
+  transition: fill $animation;
+}
