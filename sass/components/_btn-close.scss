@@ -1,0 +1,19 @@
+.btn-close {
+  @include flex();
+
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  padding: 0;
+  border: 1px solid $borderColorAdd;
+  color: $blackColor;
+  background-color: $whiteBackgroundColor;
+}
+.btn-close__icon {
+  fill: $blackColor;
+
+  .btn-close:hover &,
+  .btn-close:focus & {
+    fill: $accentColor;
+  }
+}
