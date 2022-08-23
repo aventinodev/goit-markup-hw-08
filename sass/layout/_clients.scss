@@ -4,21 +4,16 @@
   // margin-bottom: 50px;
 }
 .clients__list {
-  @include flex($fd: null, $jc: null);
+  @include flex($fd: null, $jc: null, $gp: 30px, $fw: wrap);
   // display: flex;
   // align-items: center;
-  gap: 30px;
-  flex-wrap: wrap;
+  // gap: 30px;
+  // flex-wrap: wrap;
 }
 .clients__item {
-  @media screen and (max-width: 480px) {
-    flex-basis: calc((100% - 1 * 30px) / 2);
-    height: 92px;
-  }
-  @media screen and (min-width: 480px) {
-    flex-basis: calc((100% - 1 * 30px) / 2);
-    height: 92px;
-  }
+  flex-basis: calc((100% - 1 * 30px) / 2);
+  height: 92px;
+
   @media screen and (min-width: 768px) {
     flex-basis: calc((100% - 2 * 30px) / 3);
     height: 92px;
