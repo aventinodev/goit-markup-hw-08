@@ -1,32 +1,83 @@
 .footer {
-  margin: 0 auto;
+  // margin: 0 auto;
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: $backgroundColor;
+  width: 100%;
 
-  & .container {
-    display: flex;
-    align-items: baseline;
-  }
-  .footer__logo {
-    margin: 0 0 20px;
-  }
+  // @media screen and (min-width: 450px) {
+  //   max-width: 768px;
+  // }
+  // @media screen and (min-width: 768px) {
+  //   max-width: 1200px;
+  // }
+  // @media screen and (min-width: 1200px) {
+  //   max-width: 1600px;
+  // }
 }
-.footer__social {
-  margin-right: auto;
+
+.footer__logo,
+.footer__appeal {
+  margin-bottom: 20px;
+  text-align: center;
+  @media screen and (min-width: 1200px) {
+    text-align: start;
+  }
 }
 
 .footer__contacts {
-  flex-basis: 231px;
-  margin-right: 70px;
+  margin-bottom: 60px;
+  @media screen and (min-width: 768px) {
+    max-width: calc(100% / 2);
+    margin-right: 165px;
+    margin-left: 61px;
+  }
+  @media screen and (min-width: 1200px) {
+    flex-basis: 231px;
+    margin-right: 70px;
+    margin-left: 0;
+  }
 }
 
+.footer__soc {
+  margin-bottom: 60px;
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    max-width: calc(100% / 2);
+    margin-bottom: 0;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-right: auto;
+  }
+}
+.footer__subscribe {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-left: 151px;
+  }
+}
+.subscribe__form-users-data {
+  width: 100%;
+  @include flex($fd: column, $gp: 20px);
+  @media screen and (min-width: 1200px) {
+    @include flex($gp: 12px);
+    // margin: 0;
+  }
+}
+.footer__btn {
+  margin: 0 auto;
+  @media screen and (min-width: 1200px) {
+    margin: 0;
+  }
+}
+
+//   @include flex($gp: 12px); 1200
 .footer__appeal {
-  margin-bottom: 20px;
   @include font(14px, 700, 16px, 0.03em);
   // font-weight: 700;
   // font-size: 14px;
   // line-height: 1.14;
   text-transform: uppercase;
   color: $whiteColor;
+  @media screen and (min-width: 1200px) {
+  }
+  @include font(14px, 700, 16px, 0.03em);
 }
