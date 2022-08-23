@@ -4,12 +4,13 @@
   box-shadow: $shdw;
 }
 
-@mixin flex($dsp: flex, $fd: row, $ai: center, $jc: center, $gp: null) {
+@mixin flex($dsp: flex, $fd: row, $ai: center, $jc: center, $gp: null, $fw: nowrap) {
   display: $dsp;
   flex-direction: $fd;
   align-items: $ai;
   justify-content: $jc;
   gap: $gp;
+  flex-wrap: $fw;
 }
 @mixin font($fs: false, $fw: false, $lh: false, $ls: false) {
   @if $fs {
