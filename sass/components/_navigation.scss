@@ -1,7 +1,5 @@
 .navigation__list {
   @include flex();
-  min-width: 281px;
-  list-style: none;
 }
 .navigation__item:not(:last-child) {
   margin-right: 50px;
