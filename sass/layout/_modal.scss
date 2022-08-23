@@ -1,0 +1,50 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 100%;
+  background-color: $backgroundColorBdr;
+  opacity: 1;
+  transition: opacity $animation, visibility $animation;
+}
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity $animationDelay, visibility $animationDelay;
+}
+.backdrop__modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+}
+.modal {
+  transition: transform $animationModal;
+  padding: 40px 40px;
+  width: 528px;
+  height: 581px;
+  border-radius: 4px;
+  background-color: $whiteBackgroundColor;
+  box-shadow: $boxShadowTms;
+
+  .backdrop.is-hidden & {
+    transform: translate(-50%, -50%) scale(0);
+    transition: transform $animationModal;
+  }
+}
+.modal__btn-close {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+}
+
+.modal__appeal {
+  @include font(20px, 700, 23px, 0.03em);
+  // font-weight: 700;
+  // font-size: 20px;
+  // line-height: 1.15;
+  text-align: center;
+  margin-bottom: 12px;
+}
