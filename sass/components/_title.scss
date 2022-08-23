@@ -1,9 +1,8 @@
 .title {
   text-align: center;
-  @media screen and (max-width: 1199px) {
-    margin-bottom: 30px;
-    @include font(28px, 700, 33px, 0.03em);
-  }
+
+  margin-bottom: 30px;
+  @include font(28px, 700, 33px, 0.03em);
 
   @media screen and (min-width: 1200px) {
     margin-bottom: 50px;
@@ -14,10 +13,12 @@
   margin: 0 auto 30px;
   text-transform: uppercase;
   color: $whiteColor;
-  @media screen and (max-width: 480px) {
+  //   моя редакція
+  @include font(24px, 900, 38px, 0.06em);
+
+  @media screen and (min-width: 450px) {
     @include font(26px, 900, 42px, 0.06em);
   }
-
   @media screen and (min-width: 1200px) {
     @include font(44px, 900, 60px, 0.06em);
   }
