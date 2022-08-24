@@ -21,14 +21,22 @@
   transform: translate(-50%, -50%) scale(1);
 }
 .modal {
+  min-width: 300px;
+  height: auto;
   transition: transform $animationModal;
-  padding: 40px 40px;
-  width: 528px;
-  height: 581px;
+  padding: 40px 10px;
   border-radius: 4px;
   background-color: $whiteBackgroundColor;
   box-shadow: $boxShadowTms;
-
+  @media screen and (min-width: 480px) {
+    width: 450px;
+    height: 609px;
+    padding: 40px 40px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 528px;
+    height: 581px;
+  }
   .backdrop.is-hidden & {
     transform: translate(-50%, -50%) scale(0);
     transition: transform $animationModal;
