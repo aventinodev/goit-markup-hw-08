@@ -1,8 +1,3 @@
-.clients__title {
-  // @include font(36px, 700, 42px, 0.03em);
-  // text-align: center;
-  // margin-bottom: 50px;
-}
 .clients__list {
   @include flex($fd: null, $jc: null, $gp: 30px, $fw: wrap);
   // display: flex;
