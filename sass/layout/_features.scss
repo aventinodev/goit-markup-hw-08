@@ -7,32 +7,18 @@
   }
 }
 .features__list {
-  @include flex($ai: null, $gp: 30px);
-  flex-wrap: wrap;
+  @include flex($ai: null, $gp: 30px, $fw: wrap);
   max-width: 100%;
-
-  // @media screen and (min-width: 768px) {
-  //   @include flex($ai: null, $gp: 30px);
-  //   flex-wrap: wrap;
-
-  //     // display: flex;
-  //     // justify-content: center;
 }
 
 .features__item {
-  //  @media screen and (min-width: 480px)
   width: 100%;
-
-  // &:not(:last-child) {
-  //   margin-bottom: 30px;
 
   @media screen and (min-width: 768px) {
     flex-basis: calc((100% - 1 * 30px) / 2);
   }
   @media screen and (min-width: 1200px) {
     flex-basis: calc((100% - 3 * 30px) / 4);
-    // &:not(:last-child) {
-    //   margin-right: 30px;
   }
 }
 .features__icon {
@@ -44,12 +30,6 @@
 
   background-color: $backgroundColorAdd;
 
-  // @media screen and (max-width: 767px) {
-  //   width: 100%;
-  // }
-  // @media screen and (min-width: 480px) {
-  //   width: 450px;
-  // }
   @media screen and (min-width: 768px) {
     flex-basis: calc((100% - 1 * 30px) / 2);
   }
