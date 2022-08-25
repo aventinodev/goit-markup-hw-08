@@ -1,0 +1,104 @@
+.mob-menu {
+  @media screen and (min-width: 767px) {
+    display: none;
+  }
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: $whiteColor;
+  top: 0;
+  padding-top: 48px;
+  padding-bottom: 48px;
+  overflow: auto;
+
+  &__container {
+    height: 100%;
+    @include flex($ai: null, $fd: column, $jc: space-between);
+  }
+
+  & .btn-close--menu {
+    position: absolute;
+    top: 10px;
+    right: 0;
+    // .btn-close--menu {
+    //   display: block;
+    //   margin-left: auto;
+    //   margin-top: 10px;
+  }
+
+  &__contact {
+    flex-flow: column-reverse;
+    align-items: flex-start;
+
+    margin-bottom: 64px;
+
+    & .contact__link--mail {
+      padding-top: 10px;
+      padding-left: 10px;
+      @include font(24px, 500, 28px, 0.02em);
+
+      @media screen and (min-width: 480px) {
+        padding-top: 16px;
+        padding-left: 25px;
+      }
+    }
+    & .contact__link--tel {
+      padding-bottom: 10px;
+      padding-left: 10px;
+      color: $accentColor;
+      @include font(26px, 500, 31px, 0.02em);
+
+      @media screen and (min-width: 480px) {
+        padding-bottom: 16px;
+        padding-left: 25px;
+        @include font(34px, 500, 40px, 0.02em);
+      }
+    }
+  }
+}
+.menu-soc {
+  @include flex();
+}
+
+.menu-soc__item:not(:last-child) {
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+  height: 22px;
+}
+.menu-soc__link {
+  padding-left: 10px;
+  padding-right: 10px;
+  color: $accentColor;
+  @include font(14px, 500, 22px, 00.02em);
+  @media screen and (min-width: 380px) {
+    @include font(18px, 500, 22px, 00.02em);
+  }
+}
+// .mob-menu-item:not(:last-child) {
+//   margin-bottom: 24px;
+// }
+
+.btn-open {
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  margin-left: 0;
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+// .mob-menu__container {
+//   flex-grow: 1;
+//   &__navigation {
+//     flex-grow: 1;
+//     flex-shrink: 1;
+//   }
+//   &__contact {
+//     flex-grow: 1;
+//     flex-shrink: 0.5;
+//   }
+// }
