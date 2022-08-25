@@ -16,6 +16,16 @@
   // }
 }
 
+.footer__container {
+  @media screen and (min-width: 768px) {
+    @include flex($fd: row, $fw: wrap, $ai: baseline, $jc: null);
+  }
+
+  @media screen and (min-width: 1200px) {
+    @include flex($ai: baseline, $jc: null, $fw: noWrap, $gp: null);
+  }
+}
+
 .footer__logo,
 .footer__appeal {
   margin-bottom: 20px;
