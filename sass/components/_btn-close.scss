@@ -7,7 +7,7 @@
   padding: 0;
   border: 1px solid $borderColorAdd;
   color: $blackColor;
-  background-color: $whiteBackgroundColor;
+  background-color: transparent;
 }
 .btn-close__icon {
   fill: $blackColor;
@@ -16,4 +16,9 @@
   .btn-close:focus & {
     fill: $accentColor;
   }
+}
+.btn-close--menu {
+  width: 40px;
+  height: 40px;
+  border: none;
 }
