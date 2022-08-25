@@ -3,7 +3,6 @@
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
-  outline: 1px solid red;
 
   @media screen and (min-width: 480px) {
     max-width: 480px;
@@ -15,32 +14,5 @@
 
   @media screen and (min-width: 1200px) {
     max-width: 1200px;
-  }
-}
-.container--header {
-  @include flex($jc: null);
-}
-
-.container--hero {
-  padding: 0;
-  @include flex($fd: column, $jc: null);
-
-  //   моя редакція
-  width: 100%;
-
-  @media screen and (min-width: 450px) {
-    max-width: 360px;
-  }
-  @media screen and (min-width: 1200px) {
-    max-width: 696px;
-  }
-}
-.container--footer {
-  @media screen and (min-width: 768px) {
-    @include flex($fd: row, $fw: wrap, $ai: baseline, $jc: null);
-  }
-
-  @media screen and (min-width: 1200px) {
-    @include flex($ai: baseline, $jc: null, $fw: noWrap, $gp: null);
   }
 }
