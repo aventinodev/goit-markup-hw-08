@@ -26,3 +26,17 @@
     background-image: $lG, url(../images/hero-img.jpg);
   }
 }
+.hero__container {
+  padding: 0;
+  @include flex($fd: column, $jc: null);
+
+  //   моя редакція
+  width: 100%;
+
+  @media screen and (min-width: 450px) {
+    max-width: 360px;
+  }
+  @media screen and (min-width: 1200px) {
+    max-width: 696px;
+  }
+}
