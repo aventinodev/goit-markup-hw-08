@@ -8,10 +8,10 @@
   //   моя редакція
   padding: 118px 20px;
 
-  background-image: $lG, url(../../images/img-hero-bg-mob-1x.jpg);
+  background-image: $lG, url(./images/img-hero-bg-mob-1x.jpg);
 
   @mixin retina {
-    background-image: $lG, url(../../images/img-hero-bg-mob-2x.jpg);
+    background-image: $lG, url(./images/img-hero-bg-mob-2x.jpg);
   }
 
   @media screen and (min-width: 450px) {
@@ -23,19 +23,19 @@
     padding: 118px 204px;
 
     // max-width: 1200px;
-    background-image: $lG, url(../../images/img-hero-bg-tab-1x.jpg);
+    background-image: $lG, url(./images/img-hero-bg-tab-1x.jpg);
     @mixin retina {
-      background-image: $lG, url(../../images/img-hero-bg-tab-2x.jpg);
+      background-image: $lG, url(./images/img-hero-bg-tab-2x.jpg);
     }
   }
   @media screen and (min-width: 1200px) {
     padding-top: 200px;
     padding-bottom: 200px;
     max-width: 1600px;
-    background-image: $lG, url(../../images/img-hero-bg-desk-1x.jpg);
+    background-image: $lG, url(./images/img-hero-bg-desk-1x.jpg);
 
     @mixin retina {
-      background-image: $lG, url(../../images/img-hero-bg-desk-2x.jpg);
+      background-image: $lG, url(./images/img-hero-bg-desk-2x.jpg);
     }
   }
 }
