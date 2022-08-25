@@ -21,48 +21,113 @@
   </head>
   <body>
     <header class="header section">
-      <div class="container container--header">
+      <div class="container header__container">
         <a href="./index.html" lang="en" class="logo header__logo"
           >Web<span class="logo--dark">Studio</span>
         </a>
         <nav class="navigation header__navigation">
           <ul class="navigation__list">
             <li class="navigation__item">
-              <a class="navigation__link current" href="./index.html">Студія</a>
+              <a class="navigation__link" href="./index.html">Студія</a>
             </li>
             <li class="navigation__item">
-              <a class="navigation__link" href="./portfolio.html">Портфоліо</a>
+              <a class="navigation__link current" href="./portfolio.html">Портфоліо</a>
             </li>
             <li class="navigation__item">
               <a class="navigation__link" href="">Контакти</a>
             </li>
           </ul>
         </nav>
-        <ul class="contact contact--header">
-          <li class="contact__item--header">
-            <a
-              class="contact__link contact__link--header contact__link--mail"
-              href="mailto:info@devstudio.com"
-              target="_blank"
-            >
-              <svg class="contact__icon" width="16" height="12">
-                <use href="./images/symbol-defs.svg#icon-envelope"></use>
-              </svg>
-              info@devstudio.com
-            </a>
-          </li>
-          <li class="contact__item--header">
-            <a
-              class="contact__link contact__link--header contact__link--tel"
-              href="tel:+380961111111"
-            >
-              <svg class="contact__icon" width="10" height="16">
-                <use href="./images/symbol-defs.svg#icon-smartphone"></use>
-              </svg>
-              +38 096 111 11 11
-            </a>
-          </li>
-        </ul>
+        <div class="contact-wrap header__contact-wrap">
+          <ul class="contact header__contact">
+            <li class="contact__item--header">
+              <a
+                class="contact__link contact__link--header contact__link--mail"
+                href="mailto:info@devstudio.com"
+                target="_blank"
+              >
+                <svg class="contact__icon" width="16" height="12">
+                  <use href="./images/symbol-defs.svg#icon-envelope"></use>
+                </svg>
+                info@devstudio.com
+              </a>
+            </li>
+            <li class="contact__item--header">
+              <a
+                class="contact__link contact__link--header contact__link--tel"
+                href="tel:+380961111111"
+              >
+                <svg class="contact__icon" width="10" height="16">
+                  <use href="./images/symbol-defs.svg#icon-smartphone"></use>
+                </svg>
+                +38 096 111 11 11
+              </a>
+            </li>
+          </ul>
+        </div>
+        <button class="btn-open">
+          <svg width="40" height="40">
+            <use class="btn-open__icon" href="./images/symbol-defs.svg#icon-menu_24px"></use>
+          </svg>
+        </button>
+        <!-- <button class="btn-menu is-open" aria-expanded="true" aria-controls="menu-container">
+            <svg width="40" height="40" aria-label="Перемикач мобільного меню">
+              <use class="icon-cross" href="./images/symbol-defs.svg#icon-close_40px"></use>
+              <use class="icon-menu" href="./images/symbol-defs.svg#icon-menu_24px"></use>
+            </svg>
+          </button> -->
+
+        <div class="mob-menu is-hidden">
+          <button class="btn-close btn-close--menu">
+            <svg>
+              <use class="btn-close__icon" href="./images/symbol-defs.svg#icon-close-menu"></use>
+            </svg>
+          </button>
+          <div class="container mob-menu__container">
+            <nav class="navigation mob-menu__navigation">
+              <ul class="navigation__list">
+                <li class="navigation__item navigation__item--mob">
+                  <a class="navigation__link navigation__link--mob" href="./index.html">Студія</a>
+                </li>
+                <li class="navigation__item navigation__item--mob">
+                  <a class="navigation__link navigation__link--mob current" href="./portfolio.html"
+                    >Портфоліо</a
+                  >
+                </li>
+                <li class="navigation__item navigation__item--mob">
+                  <a class="navigation__link navigation__link--mob" href="">Контакти</a>
+                </li>
+              </ul>
+            </nav>
+            <div class="mob-menu-wrap">
+              <ul class="contact mob-menu__contact">
+                <li class="contact__item">
+                  <a
+                    class="contact__link contact__link--header contact__link--mail"
+                    href="mailto:info@devstudio.com"
+                    target="_blank"
+                  >
+                    info@devstudio.com
+                  </a>
+                </li>
+                <li class="contact__item">
+                  <a
+                    class="contact__link contact__link--header contact__link--tel"
+                    href="tel:+380961111111"
+                  >
+                    +38 096 111 11 11
+                  </a>
+                </li>
+              </ul>
+              <ul class="menu-soc mob-menu__menu-soc">
+                <li class="menu-soc__item"><a href="" class="menu-soc__link">Instagram</a></li>
+                <li class="menu-soc__item"><a href="" class="menu-soc__link">Twitter</a></li>
+                <li class="menu-soc__item"><a href="" class="menu-soc__link">Facebook</a></li>
+                <li class="menu-soc__item"><a href="" class="menu-soc__link">LinkedIn</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
     </header>
     <main>
@@ -93,7 +158,22 @@
             <li class="card-list__item">
               <a href="" class="card-list__link">
                 <div class="card-list__thumb">
-                  <img src="./images/img-pf-1.jpg" alt="photo" />
+                  <picture>
+                    <source
+                      srcset="./images/img-pf-1-desk-1x.jpg 1x, ./images/img-pf-1-desk-2x.jpg 2x"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="./images/img-pf-1-tab-1x.jpg 1x, ./images/img-pf-1-tab-2x.jpg 2x"
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="./images/img-pf-1-mob-1x.jpg 1x, ./images/img-pf-1-mob-2x.jpg 2x"
+                      media="(max-width: 767px)"
+                    />
+                    <img src="./images/img-pf-1.jpg" alt="photo" />
+                  </picture>
+
                   <p class="card-list__thumb-text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -109,7 +189,22 @@
             <li class="card-list__item">
               <a href="" class="card-list__link">
                 <div class="card-list__thumb">
-                  <img src="./images/img-pf-2.jpg" alt="photo" />
+                  <picture>
+                    <source
+                      srcset="./images/img-pf-2-desk-1x.jpg 1x, ./images/img-pf-2-desk-2x.jpg 2x"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="./images/img-pf-2-tab-1x.jpg 1x, ./images/img-pf-2-tab-2x.jpg 2x"
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="./images/img-pf-2-mob-1x.jpg 1x, ./images/img-pf-2-mob-2x.jpg 2x"
+                      media="(max-width: 767px)"
+                    />
+                    <img src="./images/img-pf-2.jpg" alt="photo" />
+                  </picture>
+
                   <p class="card-list__thumb-text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -125,7 +220,22 @@
             <li class="card-list__item">
               <a href="" class="card-list__link">
                 <div class="card-list__thumb">
-                  <img src="./images/img-pf-3.jpg" alt="photo" />
+                  <picture>
+                    <source
+                      srcset="./images/img-pf-3-desk-1x.jpg 1x, ./images/img-pf-3-desk-2x.jpg 2x"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="./images/img-pf-3-tab-1x.jpg 1x, ./images/img-pf-3-tab-2x.jpg 2x"
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="./images/img-pf-3-mob-1x.jpg 1x, ./images/img-pf-3-mob-2x.jpg 2x"
+                      media="(max-width: 767px)"
+                    />
+                    <img src="./images/img-pf-3.jpg" alt="photo" />
+                  </picture>
+
                   <p class="card-list__thumb-text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -141,7 +251,21 @@
             <li class="card-list__item">
               <a href="" class="card-list__link">
                 <div class="card-list__thumb">
-                  <img src="./images/img-pf-4.jpg" alt="photo" />
+                  <picture>
+                    <source
+                      srcset="./images/img-pf-4-desk-1x.jpg 1x, ./images/img-pf-4-desk-2x.jpg 2x"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="./images/img-pf-4-tab-1x.jpg 1x, ./images/img-pf-4-tab-2x.jpg 2x"
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="./images/img-pf-4-mob-1x.jpg 1x, ./images/img-pf-4-mob-2x.jpg 2x"
+                      media="(max-width: 767px)"
+                    />
+                    <img src="./images/img-pf-4.jpg" alt="photo" />
+                  </picture>
                   <p class="card-list__thumb-text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -157,7 +281,21 @@
             <li class="card-list__item">
               <a href="" class="card-list__link">
                 <div class="card-list__thumb">
-                  <img src="./images/img-pf-5.jpg" alt="photo" />
+                  <picture>
+                    <source
+                      srcset="./images/img-pf-5-desk-1x.jpg 1x, ./images/img-pf-5-desk-2x.jpg 2x"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="./images/img-pf-5-tab-1x.jpg 1x, ./images/img-pf-5-tab-2x.jpg 2x"
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="./images/img-pf-5-mob-1x.jpg 1x, ./images/img-pf-5-mob-2x.jpg 2x"
+                      media="(max-width: 767px)"
+                    />
+                    <img src="./images/img-pf-5.jpg" alt="photo" />
+                  </picture>
                   <p class="card-list__thumb-text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -173,7 +311,21 @@
             <li class="card-list__item">
               <a href="" class="card-list__link">
                 <div class="card-list__thumb">
-                  <img src="./images/img-pf-6.jpg" alt="photo" />
+                  <picture>
+                    <source
+                      srcset="./images/img-pf-6-desk-1x.jpg 1x, ./images/img-pf-6-desk-2x.jpg 2x"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="./images/img-pf-6-tab-1x.jpg 1x, ./images/img-pf-6-tab-2x.jpg 2x"
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="./images/img-pf-6-mob-1x.jpg 1x, ./images/img-pf-6-mob-2x.jpg 2x"
+                      media="(max-width: 767px)"
+                    />
+                    <img src="./images/img-pf-6.jpg" alt="photo" />
+                  </picture>
                   <p class="card-list__thumb-text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -189,7 +341,21 @@
             <li class="card-list__item">
               <a href="" class="card-list__link">
                 <div class="card-list__thumb">
-                  <img src="./images/img-pf-7.jpg" alt="photo" />
+                  <picture>
+                    <source
+                      srcset="./images/img-pf-7-desk-1x.jpg 1x, ./images/img-pf-7-desk-2x.jpg 2x"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="./images/img-pf-7-tab-1x.jpg 1x, ./images/img-pf-7-tab-2x.jpg 2x"
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="./images/img-pf-7-mob-1x.jpg 1x, ./images/img-pf-7-mob-2x.jpg 2x"
+                      media="(max-width: 767px)"
+                    />
+                    <img src="./images/img-pf-7.jpg" alt="photo" />
+                  </picture>
                   <p class="card-list__thumb-text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -205,7 +371,21 @@
             <li class="card-list__item">
               <a href="" class="card-list__link">
                 <div class="card-list__thumb">
-                  <img src="./images/img-pf-8.jpg" alt="photo" />
+                  <picture>
+                    <source
+                      srcset="./images/img-pf-8-desk-1x.jpg 1x, ./images/img-pf-8-desk-2x.jpg 2x"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="./images/img-pf-8-tab-1x.jpg 1x, ./images/img-pf-8-tab-2x.jpg 2x"
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="./images/img-pf-8-mob-1x.jpg 1x, ./images/img-pf-8-mob-2x.jpg 2x"
+                      media="(max-width: 767px)"
+                    />
+                    <img src="./images/img-pf-8.jpg" alt="photo" />
+                  </picture>
                   <p class="card-list__thumb-text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -221,7 +401,21 @@
             <li class="card-list__item">
               <a href="" class="card-list__link">
                 <div class="card-list__thumb">
-                  <img src="./images/img-pf-9.jpg" alt="photo" />
+                  <picture>
+                    <source
+                      srcset="./images/img-pf-9-desk-1x.jpg 1x, ./images/img-pf-9-desk-2x.jpg 2x"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="./images/img-pf-9-tab-1x.jpg 1x, ./images/img-pf-9-tab-2x.jpg 2x"
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="./images/img-pf-9-mob-1x.jpg 1x, ./images/img-pf-9-mob-2x.jpg 2x"
+                      media="(max-width: 767px)"
+                    />
+                    <img src="./images/img-pf-9.jpg" alt="photo" />
+                  </picture>
                   <p class="card-list__thumb-text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -319,5 +513,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
