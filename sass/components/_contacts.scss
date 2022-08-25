@@ -1,18 +1,18 @@
 .contact {
-  // @include flex($fd: column, $ai: null, $jc: null, $gp: 9px);
-  // @media screen and (min-width: 320px) and (max-width: 1199px)
-
   @include flex($fd: column, $jc: null, $gp: 8px);
   @media screen and (min-width: 1200px) {
     @include flex($ai: flex-start, $fd: column, $jc: null, $gp: 9px);
   }
-  // display: flex;
-  // flex-direction: column;
-  // gap: 9px;
 }
-// .contact__item:not(:last-child) {
-//   margin-bottom: 9px;
 
+.header__contact {
+  @media screen and (min-width: 768px) {
+    @include flex($fd: column, $ai: flex-start, $gp: 12px);
+  }
+  @media screen and (min-width: 1200px) {
+    @include flex($gp: 50px);
+  }
+}
 .contact__link {
   font-size: 14px;
   line-height: 1.71;
@@ -29,19 +29,7 @@
   }
 }
 // =====HEADER======
-.contact--header {
-  @media screen and (min-width: 768px) {
-    @include flex($fd: column, $ai: flex-start, $gp: 12px);
-  }
-  @media screen and (min-width: 1200px) {
-    @include flex($gp: 50px);
-  }
-}
-// .contact__item--header:not(:last-child) {
-//   @media screen and (min-width: 1200px) {
-//     margin-right: 50px;
-//   }
-// }
+
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .contact__link--mail {
     padding-top: 20px;
@@ -50,24 +38,22 @@
   .contact__link--tel {
     padding-top: 0px;
     padding-bottom: 20px;
+    & .contact__icon {
+      height: 14px;
+    }
   }
 }
-.contact__link--header {
-  @include flex($jc: null);
-  // display: flex;
-  // align-items: center;
 
-  @include font(14px, 500, 16px, 0.02em);
-  // font-weight: 500;
-  // font-size: 14px;
-  // line-height: 1.14;
-  // letter-spacing: 0.02em;
+.contact__link--header {
   color: $primaryColor;
+  @include flex($jc: null);
+  @include font(14px, 500, 16px, 0.02em);
   @include animation(color, null, null, $time, $func, null);
 
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     @include font(12px, 500, 14px, 0.02em);
   }
+
   @media screen and (min-width: 1200px) {
     padding-top: 32px;
     padding-bottom: 32px;
