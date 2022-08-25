@@ -34,7 +34,7 @@
 .btn--white {
   min-width: 73px;
   height: auto;
-  padding: 6px 22px;
+  padding: 6px 6px;
 
   @include font(16px, 500, 26px, 0.03em);
   // font-weight: 500;
@@ -45,7 +45,9 @@
   box-shadow: $boxShadowFltr;
 
   transition: background-color $animation, color $animation, box-shadow 250ms $animation;
-
+  @media screen and (min-width: 380px) {
+    padding: 6px 22px;
+  }
   &:hover,
   &:focus {
     color: $whiteColor;
