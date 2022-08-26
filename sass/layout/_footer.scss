@@ -35,7 +35,8 @@
   @media screen and (min-width: 1200px) {
     flex-basis: 231px;
     margin-right: 70px;
-    margin-left: 0;
+    // margin-left: 0;
+    margin-bottom: 0;
   }
 }
 
@@ -47,6 +48,7 @@
   }
   @media screen and (min-width: 1200px) {
     margin-right: auto;
+    margin-bottom: 0;
   }
 }
 .footer__subscribe {
