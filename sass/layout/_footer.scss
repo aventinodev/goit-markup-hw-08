@@ -12,7 +12,7 @@
   }
 
   @media screen and (min-width: 1200px) {
-    @include flex($ai: baseline, $jc: null, $fw: noWrap, $gp: null);
+    @include flex($ai: baseline, $jc: space-between, $fw: noWrap, $gp: null);
   }
 }
 
@@ -29,14 +29,12 @@
   margin-bottom: 60px;
   @media screen and (min-width: 768px) {
     max-width: calc(100% / 2);
-    // margin-right: 165px;
-    // margin-left: 61px; макет
   }
   @media screen and (min-width: 1200px) {
-    flex-basis: 231px;
-    margin-right: 70px;
-    // margin-left: 0;
-    margin-bottom: 0;
+    // flex-basis: 231px;
+    // margin-right: 70px;
+    //     margin-bottom: 0;
+    margin: 0;
   }
 }
 
@@ -47,8 +45,9 @@
     margin-bottom: 0;
   }
   @media screen and (min-width: 1200px) {
-    margin-right: auto;
-    margin-bottom: 0;
+    // margin-right: auto;
+    // margin-bottom: 0;
+    margin: 0;
   }
 }
 .footer__subscribe {
