@@ -1,6 +1,5 @@
 .card-list {
   @media screen and (max-width: 767px) {
-    margin-bottom: 30px;
   }
   @media screen and (min-width: 768px) {
     @include flex($ai: null, $jc: null, $gp: 30px, $fw: wrap);
@@ -9,6 +8,9 @@
 .card-list__item {
   @media screen and (max-width: 767px) {
     width: 100%;
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
   }
   @media screen and (min-width: 768px) {
     flex-basis: calc((100% - 1 * 30px) / 2);
@@ -18,7 +20,8 @@
   }
 }
 .card-list__link {
-  display: block;
+  @include flex($ai: null, $jc: null, $fd: column);
+  height: 100%;
 
   transition: box-shadow $animation;
   &:hover,
@@ -58,6 +61,7 @@
   padding: 20px 24px;
   border: 1px solid $borderColorPf;
   border-top: none;
+  flex-grow: 1;
 }
 .card-list__item-title {
   margin-bottom: 4px;
