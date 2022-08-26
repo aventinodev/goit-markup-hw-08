@@ -1714,6 +1714,9 @@ body {
     -webkit-box-align: baseline;
         -ms-flex-align: baseline;
             align-items: baseline;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     -ms-flex-wrap: noWrap;
         flex-wrap: noWrap;
   }
@@ -1741,10 +1744,7 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .footer__contacts {
-    -ms-flex-preferred-size: 231px;
-        flex-basis: 231px;
-    margin-right: 70px;
-    margin-bottom: 0;
+    margin: 0;
   }
 }
 
@@ -1759,8 +1759,7 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .footer__soc {
-    margin-right: auto;
-    margin-bottom: 0;
+    margin: 0;
   }
 }
 
