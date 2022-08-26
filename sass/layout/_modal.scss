@@ -21,7 +21,7 @@
   transform: translate(-50%, -50%) scale(1);
 }
 .modal {
-  min-width: 300px;
+  width: 95%;
   height: auto;
   transition: transform $animationModal;
   padding: 40px 10px;
