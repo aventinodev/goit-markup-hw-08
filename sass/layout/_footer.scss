@@ -4,21 +4,11 @@
   padding-bottom: 60px;
   background-color: $backgroundColor;
   width: 100%;
-
-  // @media screen and (min-width: 450px) {
-  //   max-width: 768px;
-  // }
-  // @media screen and (min-width: 768px) {
-  //   max-width: 1200px;
-  // }
-  // @media screen and (min-width: 1200px) {
-  //   max-width: 1600px;
-  // }
 }
 
 .footer__container {
   @media screen and (min-width: 768px) {
-    @include flex($fd: row, $fw: wrap, $ai: baseline, $jc: null);
+    @include flex($fd: row, $fw: wrap, $ai: baseline, $jc: space-around);
   }
 
   @media screen and (min-width: 1200px) {
@@ -39,8 +29,8 @@
   margin-bottom: 60px;
   @media screen and (min-width: 768px) {
     max-width: calc(100% / 2);
-    margin-right: 165px;
-    margin-left: 61px;
+    // margin-right: 165px;
+    // margin-left: 61px; макет
   }
   @media screen and (min-width: 1200px) {
     flex-basis: 231px;
@@ -61,7 +51,7 @@
 }
 .footer__subscribe {
   @media screen and (min-width: 768px) and (max-width: 1199px) {
-    margin-left: 151px;
+    // margin-left: 151px; макет
   }
 }
 .subscribe__form-users-data {
