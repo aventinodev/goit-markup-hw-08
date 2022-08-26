@@ -10,8 +10,8 @@
 
   background-image: url(../images/img-hero-bg-mob-1x.jpg);
 
-  @mixin retina {
-    background-image: $lG, url(../images/img-hero-bg-mob-1x.jpg);
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: $lG, url(../images/img-hero-bg-mob-2x.jpg);
   }
 
   @media screen and (min-width: 450px) {
@@ -22,21 +22,20 @@
   @media screen and (min-width: 768px) {
     padding: 118px 204px;
 
-    // max-width: 1200px;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url(../images/img-hero-bg-tab-1x.jpg);
-    @mixin retina {
-      background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url(../images/img-hero-bg-tab-2x.jpg);
+    background-image: $lG, url(../images/img-hero-bg-tab-1x.jpg);
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: $lG, url(../images/img-hero-bg-tab-2x.jpg);
     }
   }
   @media screen and (min-width: 1200px) {
     padding-top: 200px;
     padding-bottom: 200px;
     max-width: 1600px;
+
     background-image: $lG, url(../images/img-hero-bg-desk-1x.jpg);
 
-    @mixin retina {
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
       background-image: $lG, url(../images/img-hero-bg-desk-2x.jpg);
     }
   }
