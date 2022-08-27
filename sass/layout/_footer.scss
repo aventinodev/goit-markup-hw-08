@@ -12,7 +12,7 @@
   }
 
   @media screen and (min-width: 1200px) {
-    @include flex($ai: baseline, $jc: space-between, $fw: noWrap, $gp: null);
+    @include flex($ai: baseline, $jc: null, $fw: noWrap, $gp: null);
   }
 }
 
@@ -32,9 +32,8 @@
   }
   @media screen and (min-width: 1200px) {
     // flex-basis: 231px;
-    // margin-right: 70px;
-    //     margin-bottom: 0;
-    margin: 0;
+    margin-right: 70px;
+    margin-bottom: 0;
   }
 }
 
@@ -53,6 +52,9 @@
 .footer__subscribe {
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     // margin-left: 151px; макет
+  }
+  @media screen and (min-width: 1200px) {
+    margin-left: auto;
   }
 }
 .subscribe__form-users-data {
