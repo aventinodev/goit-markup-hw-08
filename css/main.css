@@ -1714,9 +1714,6 @@ body {
     -webkit-box-align: baseline;
         -ms-flex-align: baseline;
             align-items: baseline;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
     -ms-flex-wrap: noWrap;
         flex-wrap: noWrap;
   }
@@ -1744,7 +1741,8 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .footer__contacts {
-    margin: 0;
+    margin-right: 70px;
+    margin-bottom: 0;
   }
 }
 
@@ -1760,6 +1758,12 @@ body {
 @media screen and (min-width: 1200px) {
   .footer__soc {
     margin: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer__subscribe {
+    margin-left: auto;
   }
 }
 
