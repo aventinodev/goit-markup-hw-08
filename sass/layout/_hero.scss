@@ -17,21 +17,15 @@
   @media screen and (min-width: 480px) {
     padding: 118px 60px;
     // max-width: 768px;
-  }
-
-  @media screen and (min-width: 768px) {
-    padding: 118px 204px;
-
     background-image: $lG, url(../images/img-hero-bg-tab-1x.jpg);
 
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
       background-image: $lG, url(../images/img-hero-bg-tab-2x.jpg);
     }
   }
-  @media screen and (min-width: 1200px) {
-    padding-top: 200px;
-    padding-bottom: 200px;
-    max-width: 1600px;
+
+  @media screen and (min-width: 768px) {
+    padding: 118px 204px;
 
     background-image: $lG, url(../images/img-hero-bg-desk-1x.jpg);
 
@@ -39,13 +33,18 @@
       background-image: $lG, url(../images/img-hero-bg-desk-2x.jpg);
     }
   }
+  @media screen and (min-width: 1200px) {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    max-width: 1600px;
+  }
 }
 
 // @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx)
 
 .hero__container {
   padding: 0;
-  @include flex($fd: column, $jc: null);
+  // @include flex($fd: column, $jc: null);
 
   @media screen and (min-width: 768px) {
     max-width: 360px;
