@@ -72,7 +72,7 @@
   padding-right: 10px;
   color: $accentColor;
   @include font(14px, 500, 22px, 00.02em);
-  @media screen and (min-width: 380px) {
+  @media screen and (min-width: 480px) {
     @include font(18px, 500, 22px, 00.02em);
   }
 }
