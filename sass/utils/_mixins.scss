@@ -33,8 +33,16 @@
   transition-timing-function: $func;
   transition-delay: $del;
 }
+
+@mixin item($q, $gp) {
+  flex-basis: calc((100% - ($q - 1) * $gp) / $q);
+}
+
 @mixin retina {
   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
     @content;
   }
+}
+@mixin item($q, $gp) {
+  flex-basis: calc((100% - ($q - 1) * $gp) / $q);
 }

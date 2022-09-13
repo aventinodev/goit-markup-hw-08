@@ -21,10 +21,12 @@
   width: 100%;
 
   @media screen and (min-width: 768px) {
-    flex-basis: calc((100% - 1 * 30px) / 2);
+    // flex-basis: calc((100% - 1 * 30px) / 2);
+    @include item(2, 30px);
   }
   @media screen and (min-width: 1200px) {
-    flex-basis: calc((100% - 3 * 30px) / 4);
+    // flex-basis: calc((100% - 3 * 30px) / 4);
+    @include item(4, 30px);
   }
 }
 
